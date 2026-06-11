@@ -51,7 +51,7 @@ Fonte: **PNAD Contínua — IBGE** · Periodicidade trimestral.
 
 ```
 .
-├── app.py               ← Código completo do dashboard
+├── main.py               ← Código completo do dashboard
 ├── requirements.txt     ← Dependências Python
 ├── README.md            ← Este arquivo
 ├── desocupacao.csv      ← Base de dados (deve estar na mesma pasta)
@@ -59,7 +59,7 @@ Fonte: **PNAD Contínua — IBGE** · Periodicidade trimestral.
 └── informalidade.csv    ← Base de dados (deve estar na mesma pasta)
 ```
 
-> ⚠️ Os três arquivos CSV devem estar **na mesma pasta** que o `app.py`.
+> ⚠️ Os três arquivos CSV devem estar **na mesma pasta** que o `main.py`.
 
 ---
 
@@ -70,7 +70,7 @@ Fonte: **PNAD Contínua — IBGE** · Periodicidade trimestral.
 ```bash
 mkdir dashboard-mercado-trabalho
 cd dashboard-mercado-trabalho
-# Copie app.py, requirements.txt e os três CSVs para esta pasta
+# Copie main.py, requirements.txt e os três CSVs para esta pasta
 ```
 
 ### 2. (Opcional) Crie um ambiente virtual
@@ -90,7 +90,7 @@ pip install -r requirements.txt
 ### 4. Execute o dashboard
 
 ```bash
-streamlit run app.py
+streamlit run main.py
 ```
 
 O dashboard abrirá automaticamente em `http://localhost:8501`.
